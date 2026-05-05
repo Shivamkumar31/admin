@@ -38,16 +38,22 @@ HTTP Client: Axios
 ### 📦 Setup Instructions
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/nextjs-admin-dashboard.git
+
 cd nextjs-admin-dashboard
+
 2️⃣ Install Dependencies
 npm install
+
 3️⃣ Environment Setup
 
 Create .env.local file:
 
 NEXTAUTH_URL=http://localhost:3000
+
 NEXTAUTH_SECRET=your-secret-key
+
 NEXT_PUBLIC_API_BASE_URL=https://dummyjson.com
+
 4️⃣ Run Project
 npm run dev
 
@@ -57,8 +63,7 @@ npm run dev
 
 Use DummyJSON test user:
 
-Username: kminchelle
-Password: 0lelplR
+
 📁 Project Structure
 src/
  ├── app/
@@ -71,12 +76,14 @@ src/
  ├── services/
  ├── components/
 ### 🔗 API Endpoints Used
+
 Authentication
 POST /auth/login
 Users
 GET /users
 GET /users/search?q=...
 GET /users/{id}
+
 Products
 GET /products
 GET /products/search?q=...
@@ -84,12 +91,14 @@ GET /products/category/{slug}
 GET /products/{id}
 
 ### 🚀 How It Works
+
  --User logs in using DummyJSON API
 --Token saved in localStorage + Zustand
 Protected routes restrict dashboard access
 Data fetched from API
 ### 
 UI rendered using MUI
+
 ### 🐛 Common Issues
 ❌ Login resets after refresh
 
@@ -103,6 +112,3 @@ UI rendered using MUI
 
 ➡️ Ensure id is valid string
 
-📄 Build & Run (Production)
-npm run build
-npm start
